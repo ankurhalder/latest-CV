@@ -5,7 +5,6 @@ function Resume() {
   return (
     <Fragment>
       <div className="wrapper">
-        {/* <h1>{ankurHalder.personalInfo.name}&apos;s Resume</h1> */}
         <h1>{ankurHalder.personalInfo.name}</h1>
         <section>
           <h2>Personal Information</h2>
