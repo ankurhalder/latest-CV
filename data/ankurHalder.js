@@ -34,8 +34,6 @@ const ankurHalder = {
     internship: {
       title: "Student Intern",
       company: "CODSOFT",
-      description:
-        "Congratulations! You've successfully completed the Student Internship Program : CIP. On behalf of CODSOFT we are pleased to issue your CIP Certificate.",
       duration: "10/10/2023 - 10/11/2023",
       type: "Virtual/Work from Home",
       topic: "Web Development",

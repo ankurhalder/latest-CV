@@ -61,40 +61,50 @@ function Resume() {
         <p>
           <strong>Job:</strong> {ankurHalder.workExperience.job}
         </p>
-        <div>
-          <h3>Internship</h3>
-          <p>
-            <strong>Title:</strong>{" "}
-            {ankurHalder.workExperience.internship.title}
-          </p>
-          <p>
-            <strong>Company:</strong>{" "}
-            {ankurHalder.workExperience.internship.company}
-          </p>
-          <p>
-            <strong>Description:</strong>{" "}
-            {ankurHalder.workExperience.internship.description}
-          </p>
-          <p>
-            <strong>Duration:</strong>{" "}
-            {ankurHalder.workExperience.internship.duration}
-          </p>
-          <p>
-            <strong>Type:</strong> {ankurHalder.workExperience.internship.type}
-          </p>
-          <p>
-            <strong>Topic:</strong>{" "}
-            {ankurHalder.workExperience.internship.topic}
-          </p>
-          <a
-            href={ankurHalder.workExperience.internship.certification.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Certification
-          </a>
-          {/* Add more work experience details as needed */}
-        </div>
+        {ankurHalder.workExperience.internship && (
+          <div>
+            <h3>Internship</h3>
+            <p>
+              <strong>Title:</strong>{" "}
+              {ankurHalder.workExperience.internship.title}
+            </p>
+            <p>
+              <strong>Company:</strong>{" "}
+              {ankurHalder.workExperience.internship.company}
+            </p>
+            <p>
+              <strong>Description:</strong>{" "}
+              {ankurHalder.workExperience.internship.description}
+            </p>
+            <p>
+              <strong>Duration:</strong>{" "}
+              {ankurHalder.workExperience.internship.duration}
+            </p>
+            <p>
+              <strong>Type:</strong>{" "}
+              {ankurHalder.workExperience.internship.type}
+            </p>
+            <p>
+              <strong>Topic:</strong>{" "}
+              {ankurHalder.workExperience.internship.topic}
+            </p>
+            {ankurHalder.workExperience.internship.image && (
+              <img
+                src={ankurHalder.workExperience.internship.image}
+                alt={`${ankurHalder.workExperience.internship.title} Image`}
+                height={50}
+                width={50}
+              />
+            )}
+            <a
+              href={ankurHalder.workExperience.internship.certification.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Certification
+            </a>
+          </div>
+        )}
       </section>
 
       <section>
