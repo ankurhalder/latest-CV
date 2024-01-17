@@ -48,7 +48,7 @@ const ankurHalder = {
     {
       position: "College Project Leader",
       description:
-        "Leading a 6-member team in the ongoing 'Universa' college group project. Organizing tasks, ensuring progress, and achieving project milestones.",
+        "Leading a 6-member team in the ongoing 'Eduversa' college group project. Organizing tasks, ensuring progress, and achieving project milestones.",
     },
   ],
   trainingsCourses: [
@@ -100,7 +100,7 @@ const ankurHalder = {
       title: "Explore A Career In Front-End Web Development",
       institution: "LinkedIn, Online",
       duration: "Dec 2022 - Aug 2023",
-      credentials: {
+      certificate: {
         url: "https://www.linkedin.com/learning/certificates/26a8bcdc2bbda4c723aa1c3b18d6bdfdc163050f32c3a7f62d7fef380be07d4d?u=229219690",
       },
       description:
@@ -135,7 +135,7 @@ const ankurHalder = {
     "C Programming - Intermediate",
     "Data Structures - Intermediate",
   ],
-  portfolio: [
+  projects: [
     {
       title: "Adcomsys Conference Website",
       description:
@@ -153,7 +153,7 @@ const ankurHalder = {
     {
       title: "Eduversa",
       description:
-        "As the project leader, I spearheaded the development of Universa URP System, enhancing academic processes, and showcasing my exceptional leadership and project management skills, culminating in a successful college group project.",
+        "As the project leader, I spearheaded the development of Eduversa URP System, enhancing academic processes, and showcasing my exceptional leadership and project management skills, culminating in a successful college group project.",
       link: "http://eduversa.in",
       image: "/portfolio/eduversa.png",
     },
@@ -182,7 +182,7 @@ const ankurHalder = {
     },
     geekforgeeks: {
       link: "https://auth.geeksforgeeks.org/user/ankurhalder",
-      image: "social/geekforgeeks.png",
+      image: "social/geeksforgeeks.png",
     },
     codechef: {
       link: "https://www.codechef.com/users/ankurhalder123",

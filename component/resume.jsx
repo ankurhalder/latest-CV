@@ -14,8 +14,6 @@ function Resume() {
                 <img
                   src={value}
                   alt={`${ankurHalder.personalInfo.name}'s ${key}`}
-                  height={50}
-                  width={50}
                 />
               ) : (
                 <Fragment>
@@ -44,14 +42,7 @@ function Resume() {
                 <strong>Percentage:</strong> {edu.percentage}
               </p>
             )}
-            {edu.image && (
-              <img
-                src={edu.image}
-                alt={`${edu.degree} Image`}
-                height={50}
-                width={50}
-              />
-            )}
+            {edu.image && <img src={edu.image} alt={`${edu.degree} Image`} />}
           </div>
         ))}
       </section>
@@ -92,8 +83,6 @@ function Resume() {
               <img
                 src={ankurHalder.workExperience.internship.image}
                 alt={`${ankurHalder.workExperience.internship.title} Image`}
-                height={50}
-                width={50}
               />
             )}
             <a
@@ -115,7 +104,6 @@ function Resume() {
             <p>
               <strong>Description:</strong> {position.description}
             </p>
-            {/* Add more positions of responsibility details as needed */}
           </div>
         ))}
       </section>
@@ -150,7 +138,6 @@ function Resume() {
                 )}
               </Fragment>
             )}
-            {/* Add more training courses details as needed */}
           </div>
         ))}
       </section>
@@ -165,17 +152,19 @@ function Resume() {
       </section>
 
       <section>
-        <h2>Portfolio</h2>
-        {ankurHalder.portfolio.map((project, index) => (
+        <h2>Projects</h2>
+        {ankurHalder.projects.map((project, index) => (
           <div key={index}>
             <h3>{project.title}</h3>
             <p>
               <strong>Description:</strong> {project.description}
             </p>
+            {project.image && (
+              <img src={project.image} alt={`${project.title} Image`} />
+            )}
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               Visit Project
             </a>
-            {/* Add more portfolio project details as needed */}
           </div>
         ))}
       </section>
