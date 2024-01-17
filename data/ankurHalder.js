@@ -42,7 +42,7 @@ const ankurHalder = {
         url: "https://drive.google.com/file/d/1UTuhpUyL-AEO9VyOQgXhRHm-IyR-CVvb/view",
         credentialID: "4a5af54",
       },
-      image: "/codsoft.png",
+      image: "work/codsoft.jpg",
     },
   },
   positionsOfResponsibility: [
@@ -142,21 +142,21 @@ const ankurHalder = {
       description:
         "Co-created Adcomsys conference website in collaboration with a classmate. Built using Next.js, React.js, and SCSS. Scheduled for 2024. For more information, please type 'who created this website?' in the chatbot of the official website.",
       link: "https://adcomsys.uem.edu.in",
-      image: "/adcomsys.png",
+      image: "/portfolio/adcomsys.png",
     },
     {
       title: "Space Otaku",
       description:
         "Space Otaku: Explore space news, astronaut updates, satellite tracking, and more! Powered by Next.js, Sass, and Dialogflow for an immersive, interactive experience. Stay informed about the cosmos.",
       link: "https://www.spaceotaku.online",
-      image: "/spaceotaku.png",
+      image: "/portfolio/spaceotaku.png",
     },
     {
       title: "Eduversa",
       description:
         "As the project leader, I spearheaded the development of Universa URP System, enhancing academic processes, and showcasing my exceptional leadership and project management skills, culminating in a successful college group project.",
       link: "http://eduversa.in",
-      image: "/eduversa.png",
+      image: "/portfolio/eduversa.png",
     },
   ],
   socialProfiles: {
