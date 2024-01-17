@@ -1,242 +1,119 @@
-.wrapper {
-  background-color: var(--white-1);
-  @include flex-container(column, nowrap, center, center);
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$font-family: "Arial", sans-serif;
+
+// Base styling for the container
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: $font-family;
+  background: linear-gradient(to right, #ecf0f1, #f9f9f9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
   h1 {
-    font-size: var(--font-7);
-    font-family: var(--font-oswald);
-    color: var(--blue-1);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 2.5%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  h2,
-  h3 {
+    color: $primary-color;
+    font-size: 3em;
+    margin-bottom: 20px;
     text-align: center;
-    color: #e74c3c;
-    font-size: 24px;
-    margin-bottom: 15px;
+  }
+}
+
+// Headings
+h2 {
+  color: $secondary-color;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: $accent-color;
+  font-size: 1.8em;
+  margin-bottom: 12px;
+}
+
+// Section styling
+section {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
   }
 
+  // List styling
   ul {
     list-style: none;
+    padding: 0;
 
-    @include flex-container(column, nowrap, center, space-between);
-    gap: 5px;
     li {
-      font-size: var(--font-13);
-      font-weight: 400;
-      letter-spacing: 1.5px;
-      color: var(--black);
-      strong {
-        font-family: var(--font-elianto);
-        font-size: var(--font-12);
-        letter-spacing: 1.5px;
-      }
+      margin-bottom: 15px;
     }
   }
+
+  // Image styling
   img {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 
     &:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
   }
 
+  // Specify image dimensions for fixed-dimensions class
+  img {
+    width: 300px;
+    height: 200px;
+  }
+
+  // Link styling
   a {
-    color: #3498db;
+    color: $primary-color;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #e74c3c;
+      color: darken($primary-color, 15%);
     }
   }
+}
 
-  section {
-    // margin-bottom: 40px;
-    // padding: 20px;
-    // border-radius: 10px;
-    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+// Paragraph styling
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+// Bold text styling
+strong {
+  font-weight: bold;
+}
+
+// Unordered list styling
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
 
     &:last-child {
-      margin-bottom: 0;
-    }
-
-    &.highlight {
-      background: linear-gradient(45deg, #e74c3c, #c0392b);
-      color: #fff;
-
-      h3 {
-        color: #fff;
-      }
-
-      &:hover {
-        background: linear-gradient(45deg, #c0392b, #922b21);
-      }
-    }
-  }
-
-  p {
-    margin-bottom: 15px;
-    color: #555;
-  }
-
-  strong {
-    font-weight: bold;
-  }
-
-  .education,
-  .work-experience,
-  .positions-of-responsibility,
-  .training-courses,
-  .skills,
-  .projects,
-  .social-profiles {
-    h3 {
-      color: #e74c3c;
-      font-size: 28px;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  .education {
-    p {
-      color: #777;
-    }
-  }
-
-  .work-experience {
-    div {
-      margin-bottom: 25px;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #777;
-    }
-
-    a {
-      display: block;
-      margin-top: 10px;
-      color: #3498db;
-      transition: color 0.3s ease-in-out;
-
-      &:hover {
-        color: #e74c3c;
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .positions-of-responsibility {
-    p {
-      color: #777;
-    }
-  }
-
-  .training-courses {
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        margin-bottom: 8px;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 8px;
-      }
-    }
-  }
-
-  .skills {
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-
-      li {
-        margin-right: 12px;
-        margin-bottom: 12px;
-        background: linear-gradient(45deg, #e74c3c, #c0392b);
-        color: #fff;
-        padding: 12px 20px;
-        border-radius: 8px;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-      }
-    }
-  }
-
-  .projects {
-    a {
-      display: block;
-      margin-top: 15px;
-      color: #3498db;
-      transition: color 0.3s ease-in-out;
-
-      &:hover {
-        color: #e74c3c;
-        text-decoration: underline;
-      }
-    }
-
-    img {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-top: 10px;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-      &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-    }
-  }
-
-  .social-profiles {
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-
-      li {
-        margin-right: 15px;
-
-        a {
-          img {
-            max-width: 36px;
-            height: auto;
-            border-radius: 50%;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-            &:hover {
-              transform: scale(1.2);
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-          }
-        }
-      }
+      margin-right: 0;
     }
   }
 }

@@ -4,7 +4,7 @@ import ankurHalder from "../data/ankurHalder";
 function Resume() {
   return (
     <Fragment>
-      <div className="wrapper">
+      <div className="container">
         <h1>{ankurHalder.personalInfo.name}</h1>
         <section>
           <h2>Personal Information</h2>
