@@ -1,102 +1,209 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$background-color: #f9f9f9;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
 $font-family: "Arial", sans-serif;
-$heading-color: #333;
-$text-color: #555;
 
-h1 {
-  font-size: 3rem;
-  color: $heading-color;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: $heading-color;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 2rem;
-  color: $heading-color;
-  margin-bottom: 0.75rem;
-}
-
-p {
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-// Lists
-ul {
-  list-style-type: none;
+body {
+  background-color: $background-color;
+  margin: 0;
   padding: 0;
+  font-family: $font-family;
 }
 
-li {
-  margin-bottom: 1rem;
-}
+.wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px $box-shadow-color;
 
-// Strong
-strong {
-  font-weight: bold;
-}
+  h1 {
+    color: $primary-color;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-// Sections
-section {
-  margin-bottom: 2.5rem;
+  h2,
+  h3 {
+    color: $accent-color;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
 
-  &:last-child {
-    margin-bottom: 0;
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
   }
 
   img {
     max-width: 100%;
     height: auto;
-    margin-top: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    // Set a specific size for all images
+    width: 100%;
+    max-width: 500px; // Adjust as needed
+    height: auto; // Maintain aspect ratio
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   a {
-    color: #007bff;
+    color: $primary-color;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      text-decoration: underline;
-      color: darken(#007bff, 15%);
+      color: $accent-color;
     }
   }
 
-  &.social-profiles {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.5rem;
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    box-shadow: 0 4px 10px $box-shadow-color;
+    transition: background 0.3s ease-in-out;
 
-    li {
-      margin-right: 1.5rem;
+    &:hover {
+      background: linear-gradient(45deg, #f9f9f9, #e6e6e6);
+    }
 
-      &:last-child {
-        margin-right: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .education,
+  .work-experience,
+  .positions-of-responsibility,
+  .training-courses,
+  .skills,
+  .projects,
+  .social-profiles {
+    h3 {
+      color: $accent-color;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .education {
+    p {
+      color: #777;
+    }
+  }
+
+  .work-experience {
+    div {
+      margin-bottom: 25px;
+    }
+  }
+
+  .positions-of-responsibility {
+    p {
+      color: #777;
+    }
+  }
+
+  .training-courses {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
       }
+    }
+  }
 
-      a {
-        display: block;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out;
+  .skills {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+      li {
+        margin-right: 12px;
+        margin-bottom: 12px;
+        background-color: $accent-color;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease-in-out,
+          transform 0.3s ease-in-out;
 
         &:hover {
-          transform: scale(1.1);
+          background-color: darken($accent-color, 10%);
+          transform: scale(1.05);
         }
       }
     }
   }
+
+  .projects {
+    a {
+      display: block;
+      margin-top: 15px;
+      color: $primary-color;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $accent-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social-profiles {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin-right: 15px;
+
+        a {
+          img {
+            max-width: 36px;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Add more styles as needed
 }
