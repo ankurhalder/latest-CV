@@ -1,8 +1,9 @@
 import { Fragment } from "react";
+import { Resume } from "../component";
 function App() {
   return (
     <Fragment>
-      <div>hello world</div>
+      <Resume />
     </Fragment>
   );
 }
