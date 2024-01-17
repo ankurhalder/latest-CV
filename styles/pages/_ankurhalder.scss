@@ -1,14 +1,19 @@
 .wrapper {
+  background-color: var(--white-1);
+  @include flex-container(column, nowrap, center, center);
   h1 {
-    color: #3498db;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: var(--font-7);
+    font-family: var(--font-oswald);
+    color: var(--blue-1);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 2.5%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   h2,
   h3 {
+    text-align: center;
     color: #e74c3c;
     font-size: 24px;
     margin-bottom: 15px;
