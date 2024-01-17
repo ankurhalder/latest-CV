@@ -1,27 +1,6 @@
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$accent-color: #e74c3c;
-$background-color: #f9f9f9;
-$box-shadow-color: rgba(0, 0, 0, 0.1);
-$font-family: "Arial", sans-serif;
-
-body {
-  background-color: $background-color;
-  margin: 0;
-  padding: 0;
-  font-family: $font-family;
-}
-
 .wrapper {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px $box-shadow-color;
-
   h1 {
-    color: $primary-color;
+    color: #3498db;
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
@@ -30,7 +9,7 @@ body {
 
   h2,
   h3 {
-    color: $accent-color;
+    color: #e74c3c;
     font-size: 24px;
     margin-bottom: 15px;
   }
@@ -49,25 +28,25 @@ body {
     height: auto;
     margin-bottom: 15px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-    // Set a specific size for all images
     width: 100%;
-    max-width: 500px; // Adjust as needed
-    height: auto; // Maintain aspect ratio
+    max-width: 500px;
+    height: auto;
 
     &:hover {
       transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
   }
 
   a {
-    color: $primary-color;
+    color: #3498db;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: $accent-color;
+      color: #e74c3c;
     }
   }
 
@@ -75,16 +54,24 @@ body {
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(45deg, #ffffff, #f0f0f0);
-    box-shadow: 0 4px 10px $box-shadow-color;
-    transition: background 0.3s ease-in-out;
-
-    &:hover {
-      background: linear-gradient(45deg, #f9f9f9, #e6e6e6);
-    }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &.highlight {
+      background: linear-gradient(45deg, #e74c3c, #c0392b);
+      color: #fff;
+
+      h3 {
+        color: #fff;
+      }
+
+      &:hover {
+        background: linear-gradient(45deg, #c0392b, #922b21);
+      }
     }
   }
 
@@ -105,7 +92,7 @@ body {
   .projects,
   .social-profiles {
     h3 {
-      color: $accent-color;
+      color: #e74c3c;
       font-size: 28px;
       margin-bottom: 15px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -122,6 +109,27 @@ body {
     div {
       margin-bottom: 25px;
     }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #777;
+    }
+
+    a {
+      display: block;
+      margin-top: 10px;
+      color: #3498db;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #e74c3c;
+        text-decoration: underline;
+      }
+    }
   }
 
   .positions-of-responsibility {
@@ -137,6 +145,8 @@ body {
 
       li {
         margin-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
       }
     }
   }
@@ -151,16 +161,15 @@ body {
       li {
         margin-right: 12px;
         margin-bottom: 12px;
-        background-color: $accent-color;
+        background: linear-gradient(45deg, #e74c3c, #c0392b);
         color: #fff;
         padding: 12px 20px;
         border-radius: 8px;
-        transition: background-color 0.3s ease-in-out,
-          transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
         &:hover {
-          background-color: darken($accent-color, 10%);
           transform: scale(1.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
       }
     }
@@ -170,12 +179,24 @@ body {
     a {
       display: block;
       margin-top: 15px;
-      color: $primary-color;
+      color: #3498db;
       transition: color 0.3s ease-in-out;
 
       &:hover {
-        color: $accent-color;
+        color: #e74c3c;
         text-decoration: underline;
+      }
+    }
+
+    img {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -194,16 +215,15 @@ body {
             max-width: 36px;
             height: auto;
             border-radius: 50%;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
             &:hover {
               transform: scale(1.2);
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
           }
         }
       }
     }
   }
-
-  // Add more styles as needed
 }
