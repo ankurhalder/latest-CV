@@ -3,7 +3,8 @@ const ankurHalder = {
     name: "Ankur Halder",
     email: "ankur.halder12345@gmail.com",
     phone: "+91 9748903490",
-    location: "Kolkata",
+    location: "Kolkata, West Bengal, India",
+    address: "13R Ishan Ghosh Road, Purba Barisha, Kolkata - 700008",
     image: "/Ankur_halder_12021002022073_PASSPORT.jpg",
   },
   education: [
