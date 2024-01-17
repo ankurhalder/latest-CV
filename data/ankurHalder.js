@@ -162,36 +162,36 @@ const ankurHalder = {
   socialProfiles: {
     linkedIn: {
       link: "https://www.linkedin.com/in/ankurhalder",
-      image: "linkedin.png",
+      image: "social/linkedin.png",
     },
     github: {
       link: "https://github.com/ankurhalder",
-      image: "github.png",
+      image: "social/github.png",
     },
     leetcode: {
       link: "https://leetcode.com/ankurhalder",
-      image: "leetcode.png",
+      image: "social/leetcode.png",
     },
 
     facebook: {
       link: "https://www.facebook.com/ankur.roxx.9",
-      image: "facebook.png",
+      image: "social/facebook.png",
     },
     instagram: {
       link: "https://www.instagram.com/halder_ankur",
-      image: "instagram.png",
+      image: "social/instagram.png",
     },
     geekforgeeks: {
       link: "https://auth.geeksforgeeks.org/user/ankurhalder",
-      image: "geekforgeeks.png",
+      image: "social/geekforgeeks.png",
     },
     codechef: {
       link: "https://www.codechef.com/users/ankurhalder123",
-      image: "codechef.png",
+      image: "social/codechef.png",
     },
     hackerrank: {
       link: "https://www.hackerrank.com/profile/ankurhalder",
-      image: "hackerrank.png",
+      image: "social/hackerrank.png",
     },
   },
 };
