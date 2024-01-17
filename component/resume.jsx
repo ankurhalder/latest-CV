@@ -44,7 +44,14 @@ function Resume() {
                 <strong>Percentage:</strong> {edu.percentage}
               </p>
             )}
-            {/* Add more education details as needed */}
+            {edu.image && (
+              <img
+                src={edu.image}
+                alt={`${edu.degree} Image`}
+                height={50}
+                width={50}
+              />
+            )}
           </div>
         ))}
       </section>
