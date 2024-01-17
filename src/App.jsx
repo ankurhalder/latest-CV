@@ -1,12 +1,9 @@
 import { Fragment } from "react";
-import Resume from "../component/resume";
-import ankurHalder from "../data/ankurHalder";
 function App() {
   return (
     <Fragment>
-      <Resume data={ankurHalder} />
+      <div>hello world</div>
     </Fragment>
   );
 }
-
 export default App;
