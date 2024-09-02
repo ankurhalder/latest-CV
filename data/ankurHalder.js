@@ -147,7 +147,7 @@ const ankurHalder = {
       title: "Space Otaku",
       description:
         "Space Otaku: Explore space news, astronaut updates, satellite tracking, and more! Powered by Next.js, Sass, and Dialogflow for an immersive, interactive experience. Stay informed about the cosmos.",
-      link: "https://www.spaceotaku.online",
+      link: "https://www.spaceotaku.ankurhalder.in",
       image: "/portfolio/spaceotaku.png",
     },
     {
